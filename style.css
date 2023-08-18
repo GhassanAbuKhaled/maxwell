@@ -1,0 +1,513 @@
+:root {
+
+
+    --white: hsl(9, 33%, 96%);
+    --bright-green: #2AD882;
+    --deep-charcoal: #1F242B;
+
+
+    --ff-primary: 'Montserrat', sans-serif;
+
+
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+
+
+    --font-size-xxs: 0.9125rem;
+    --font-size-xs: 1rem;
+    --font-size-sm: 1.4375rem;
+    --font-size-md: 1.7rem;
+    --font-size-lg: 2rem;
+    --font-size-xl: 2.5rem;
+    --font-size-xxl: 3.31875rem;
+
+
+    --size-100: 0.25rem;
+    --size-200: 0.5rem;
+    --size-300: 0.75rem;
+    --size-400: 1rem;
+    --size-500: 1.5rem;
+    --size-600: 2rem;
+    --size-700: 3rem;
+    --size-800: 4rem;
+    --size-900: 5rem;
+    --size-1100: min(12rem, 10vw);
+
+
+}
+
+
+@media (min-width: 50em) {
+
+    :root {
+        --font-size-xxs: 1.125rem;
+        --font-size-xs: 1.375rem;
+        --font-size-sm: 1.4375rem;
+        --font-size-md: 2.13125rem;
+        --font-size-lg: 3rem;
+        --font-size-xl: 4.5rem;
+        --font-size-xxl: 5.31875rem;
+    }
+
+
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Set core body defaults */
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-accent-100);
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* general styling */
+
+body {
+
+    font-family: var(--ff-primary);
+    background-color: var(--deep-charcoal);
+    overflow-x: hidden;
+    line-height: 1.4;
+}
+
+section {
+    min-height: 100vh;
+    position: relative;
+    margin-bottom: var(--size-900);
+}
+
+/* Utility classes */
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.fw-semi-bold {
+    font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.fw-bolder {
+    font-weight: var(--fw-bolder);
+}
+
+.fs-xxs {
+    font-size: var(--font-size-xxs);
+}
+
+.fs-xs {
+    font-size: var(--font-size-xs);
+}
+
+.fs-sm {
+    font-size: var(--font-size-sm);
+}
+
+.fs-md {
+    font-size: var(--font-size-md);
+}
+
+.fs-lg {
+    font-size: var(--font-size-lg);
+}
+
+.fs-xl {
+    font-size: var(--font-size-lg);
+}
+
+.fs-xxl {
+    font-size: var(--font-size-lg);
+}
+
+.padding-top-900 {
+    padding-top: var(--size-900);
+}
+
+.padding-block-900 {
+    padding-block: var(--size-900);
+}
+
+.padding-block-500 {
+    padding-block: var(--size-500);
+}
+
+.padding-inline-600 {
+    padding-inline: var(--size-600);
+}
+
+.padding-inline-900 {
+    padding-inline: var(--size-900);
+}
+
+.padding-inline-end-600 {
+    padding-inline-end: var(--size-600);
+}
+
+.margin-inline-end-600 {
+    margin-inline-end: var(--size-600);
+}
+
+.margin-inline-start-600 {
+    margin-inline-start: var(--size-600);
+}
+
+.margin-bottom-900 {
+    margin-block-end: var(--size-900);
+}
+
+.margin-bottom-700 {
+    margin-block-end: var(--size-700);
+}
+
+.margin-bottom-500 {
+    margin-block-end: var(--size-500);
+}
+
+.margin-bottom-400 {
+    margin-block-end: var(--size-400);
+}
+
+.margin-bottom-300 {
+    margin-block-end: var(--size-300);
+}
+
+.margin-bottom-100 {
+    margin-block-end: var(--size-100);
+}
+
+.d-flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-content-flex-end {
+    justify-content: flex-end;
+}
+
+.align_end {
+    align-self: flex-end;
+}
+
+.align_center {
+    align-self: center;
+}
+
+.align_start {
+    align-self: self-start;
+}
+
+.justify_center {
+    justify-self: center;
+}
+
+.justify_start {
+    justify-self: start;
+}
+
+.justify_end {
+    justify-self: end;
+}
+
+.green-bg {
+    background-color: var(--bright-green);
+}
+
+.green-clr {
+    color: var(--bright-green);
+}
+
+.white-bg {
+    background-color: var(--white);
+}
+
+.white-clr {
+    color: var(--white);
+}
+
+.charcoal-bg {
+    background-color: var(--deep-charcoal);
+}
+
+.charcoal-clr {
+    color: var(--deep-charcoal);
+}
+
+.line {
+    height: 3px;
+    min-width: 40%;
+    background-color: var(--bright-green);
+}
+
+.text-uppercase {
+    text-transform: uppercase
+}
+
+.container {
+    --max-width: 2100px;
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.primary-header {
+    --padding-header: 3.5rem;
+
+    padding: min(var(--padding-header), 10vh) 1.2rem;
+    color: var(--white);
+    align-items: center;
+    width: 100%;
+}
+
+.primary-header .circelBg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--bright-green);
+    color: var(--deep-charcoal);
+}
+
+.even-columns {
+    display: grid;
+    gap: 1.8rem;
+}
+
+.even-rows {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2.9rem;
+}
+
+.green-side {
+    display: none;
+    position: absolute;
+    z-index: -1;
+}
+
+.align-items-justify-content {
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button {
+    padding: 0.2rem 0.2rem;
+    min-width: min(16rem, 45%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button p {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dots {
+    height: max(100px, 13vh);
+    width: min(200px, 30vw);
+}
+
+.cards {
+    display: block;
+    width: auto;
+}
+
+.card {
+    display: block;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.phones {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.phones img {
+
+    max-height: 27rem;
+    min-height: 19rem;
+
+}
+.Client1 , .Client2{
+    justify-self: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.circle{
+    position: absolute;
+    top: -12%;
+    right: 0;;
+    height: 4.3rem;
+    width: 4.3rem;
+    border-radius: 50%;
+}
+@media (min-width: 67em) {
+
+    .even-columns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+
+    .green-side {
+        display: block;
+    }
+
+    .maxwellImg {
+        margin-left: var(--size-1100);
+    }
+
+    .primary-header .circelBg {
+        background-color: var(--deep-charcoal);
+        color: var(--white);
+    }
+
+    .phones {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-flow: column;
+        gap: 1.8rem;
+        justify-self: end;
+    }
+
+    .Client1{
+        justify-self: end;
+        margin-bottom: 0;
+    }
+    .Client2{
+        justify-self: start;
+        margin-bottom: 0;
+    }
+}
+
+
+@media (min-width: 60em) {
+    .cards {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 4vw;
+    }
+
+    .card {
+        display: block;
+    }
+
+}
+
+@media (min-width: 43em) and (max-width: 60em) {
+
+    .cards {
+        display: block;
+        width: auto
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+
+}
+@media (min-width: 33em) and (max-width: 67em) {
+    .phones {
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+    }
+
+}
+
+
+
+
