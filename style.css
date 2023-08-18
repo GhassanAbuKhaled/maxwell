@@ -132,7 +132,7 @@ body {
 }
 
 section {
-    min-height: 70vh;
+    min-height: 100vh;
     position: relative;
     margin-bottom: var(--size-900);
 }
