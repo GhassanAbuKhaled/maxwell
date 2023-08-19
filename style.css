@@ -323,6 +323,10 @@ section {
     text-transform: uppercase
 }
 
+.text-align-center {
+    text-align: center;
+}
+
 .container {
     --max-width: 2100px;
     max-width: var(--max-width);
@@ -367,6 +371,30 @@ section {
 .Skills-grid .PersonalSkills-container {
     width: 90%;
     margin: auto;
+}
+
+.Achievement_grid {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Achievement_grid> :nth-child(2) {
+    order: -1;
+}
+
+.Achievement_grid .box {
+    border: 2px solid var(--bright-green);
+    padding: 2rem;
+    margin: min(2%, 2rem);
+    height: fit-content;
+    width: min(80%, 500px);
+    justify-self: center;
+}
+
+.Achievement_grid .line {
+    width: 20px !important;
+    margin-top: 2rem;
 }
 
 .even-rows {
@@ -508,6 +536,25 @@ section {
     .Skills-grid .PersonalSkills-container {
         width: 100%;
     }
+
+    .Achievement_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.2rem
+    }
+
+    .Achievement_grid .box {
+        width: 90%;
+    }
+
+    .Achievement_grid> :nth-child(2) {
+        order: 0;
+    }
+
+    .Achievement_grid .line {
+        width: 80% !important;
+    }
+
 
 }
 
