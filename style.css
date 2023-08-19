@@ -498,6 +498,7 @@ section {
 
     .Skills-grid img {
         justify-self: start;
+        align-self: center;
     }
 
     .Skills-grid .line {
