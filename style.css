@@ -137,6 +137,7 @@ section {
     margin-bottom: var(--size-900);
 }
 
+
 /* Utility classes */
 
 .fw-regular {
@@ -308,6 +309,10 @@ section {
     color: var(--deep-charcoal);
 }
 
+.p-width {
+    width: min(99%, 500px)
+}
+
 .line {
     height: 3px;
     min-width: 40%;
@@ -345,9 +350,23 @@ section {
     color: var(--deep-charcoal);
 }
 
-.even-columns {
+.even-columns,
+.Skills-grid {
     display: grid;
     gap: 1.8rem;
+}
+
+.Skills-grid img {
+    justify-self: center;
+}
+
+.Skills-grid .line {
+    justify-self: end;
+}
+
+.Skills-grid .PersonalSkills-container {
+    width: 90%;
+    margin: auto;
 }
 
 .even-rows {
@@ -416,20 +435,25 @@ section {
     min-height: 19rem;
 
 }
-.Client1 , .Client2{
+
+.Client1,
+.Client2 {
     justify-self: center;
     position: relative;
     margin-bottom: 2rem;
 }
 
-.circle{
+.circle {
     position: absolute;
     top: -12%;
-    right: 0;;
+    right: 0;
+    ;
     height: 4.3rem;
     width: 4.3rem;
     border-radius: 50%;
 }
+
+
 @media (min-width: 67em) {
 
     .even-columns {
@@ -458,14 +482,32 @@ section {
         justify-self: end;
     }
 
-    .Client1{
+    .Client1 {
         justify-self: end;
         margin-bottom: 0;
     }
-    .Client2{
+
+    .Client2 {
         justify-self: start;
         margin-bottom: 0;
     }
+
+    .Skills-grid {
+        grid-template-columns: 1fr 2.3fr 2fr;
+    }
+
+    .Skills-grid img {
+        justify-self: start;
+    }
+
+    .Skills-grid .line {
+        justify-self: start;
+    }
+
+    .Skills-grid .PersonalSkills-container {
+        width: 100%;
+    }
+
 }
 
 
@@ -499,6 +541,7 @@ section {
 
 
 }
+
 @media (min-width: 33em) and (max-width: 67em) {
     .phones {
         display: flex;
@@ -507,7 +550,3 @@ section {
     }
 
 }
-
-
-
-
