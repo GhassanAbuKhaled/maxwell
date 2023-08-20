@@ -183,7 +183,9 @@ section {
 .margin-inline-start-600 {
     margin-inline-start: var(--size-600);
 }
-
+.margin-bottom-900 {
+    margin-block-end: var(--size-900);
+}
 .margin-bottom-700 {
     margin-block-end: var(--size-700);
 }
