@@ -48,7 +48,7 @@
         --font-size-md: 2.13125rem;
         --font-size-lg: 3rem;
         --font-size-xl: 4.5rem;
-        --font-size-xxl: 5.31875rem;
+        --font-size-xxl: 4.6rem;
     }
 
 
@@ -177,11 +177,11 @@ section {
 }
 
 .fs-xl {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
 }
 
 .fs-xxl {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xxl);
 }
 
 .padding-top-900 {
@@ -397,6 +397,18 @@ section {
     margin-top: 2rem;
 }
 
+.ContactDetails-grid{
+    display: flex;
+    flex-direction: column;
+}
+.ContactDetails-grid img{
+    align-self: center;
+    margin-bottom: 2rem;
+}
+.ContactDetails-grid .line{
+    width: 30%;
+    margin-left: auto;
+}
 .even-rows {
     display: grid;
     grid-auto-flow: row;
@@ -481,6 +493,10 @@ section {
     border-radius: 50%;
 }
 
+.maxwellImg{
+   justify-self: center;
+}
+
 
 @media (min-width: 67em) {
 
@@ -495,6 +511,7 @@ section {
 
     .maxwellImg {
         margin-left: var(--size-1100);
+        justify-self: end;
     }
 
     .primary-header .circelBg {
@@ -555,7 +572,20 @@ section {
         width: 80% !important;
     }
 
+    .ContactDetails-grid{
 
+        display: grid;
+        grid-template-columns: 1.2fr 1fr .3fr;
+        gap: 2rem
+    }
+    .ContactDetails-grid img{
+        justify-self: end;
+        align-self: center;
+    }
+
+    .ContactDetails-grid .line{
+        width: 80%;
+    }
 }
 
 
@@ -596,5 +626,6 @@ section {
         justify-self: center;
         justify-content: center;
     }
+    
 
 }
