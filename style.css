@@ -602,7 +602,7 @@ section {
     }
 
     .thanksBtn .button {
-        margin-bottom: 1rem;
+        margin-bottom: min(1rem, 1%);
 
     }
 
