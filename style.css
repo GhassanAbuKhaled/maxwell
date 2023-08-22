@@ -133,7 +133,6 @@ body {
 
 section {
     min-height: 100vh;
-    max-height: 100vh;
     position: relative;
     margin-bottom: var(--size-900);
 }
