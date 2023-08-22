@@ -387,7 +387,6 @@ section {
 .button {
     padding: 0.2rem 0.2rem;
     min-width: min(16rem, 45%);
-    margin-top: min(11.5rem, 2%);
     display: flex;
     align-items: center;
     justify-content: center;
