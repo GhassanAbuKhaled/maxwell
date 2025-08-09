@@ -1,541 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MORGAN MAXWELL</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Outfit:wght@400;700&family=Poppins&family=Questrial&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!----------------------------------------------- First Page -------------------------------------------------->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Morgan Maxwell - Professional Graphic Designer specializing in Brand Identity and Web Design">
+    <title>Morgan Maxwell | Graphic Designer</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Optimized font loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
 
-    <section class="container even-rows">
-      <div
-        class="green-side green-bg"
-        style="right: 0; top: 0; height: 100%; width: min(33%, 500px)"
-      ></div>
-
-      <header class="primary-header d-flex space-between margin-bottom-900">
-        <h1 class="fw-bold fs-xs flex-2">PORTFOLIO.</h1>
-
-        <div class="d-flex fs-xxs align-items-justify-content">
-          <h2 class="charcoal-clr">Contact Me</h2>
-          <div class="circelBg"><i class="bi bi-globe"></i></div>
-          <div class="circelBg">
-            <a href="mailto:hello@reallygreatsite.com">
-              <i class="bi bi-envelope-fill"></i
-            ></a>
-          </div>
-
-          <div class="circelBg">
-            <i class="bi bi-telephone-forward-fill"></i>
-          </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Morgan Maxwell</h2>
+                <span class="demo-badge">Demo</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </header>
+    </nav>
 
-      <div class="even-columns white-clr justify_center">
-        <div class="justify_start align_center">
-          <p class="fs-sm green-clr margin-bottom-300">Hello Everyone.</p>
-          <h1 class="fs-xl fw-bolder">I'M MORGAN</h1>
-          <h1 class="fs-xl fw-bolder margin-bottom-900">MAXWELL</h1>
-
-          <div class="button green-bg">
-            <p class="charcoal-bg fw-bold text-uppercase">Graphic Designer</p>
-            <i
-              class="bi bi-arrow-right fs-md charcoal-clr"
-              style="margin-inline: 0.3rem"
-            ></i>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/dots.png"
-        alt="dots"
-        class="justify_start align_end dots"
-      />
-    </section>
-    <!----------------------------------------------end of the I Page ------------------------------------------------->
-
-    <section class="container even-rows">
-      <header class="primary-header">
-        <h1 class="fw-bold fs-xs flex-2">PORTFOLIO.</h1>
-      </header>
-
-      <div class="even-columns">
-        <img
-          src="./assets/maxwellFriend.png"
-          alt="maxwell's Friend image"
-          class="justify_center align_center maxwellImg"
-        />
-
-        <div class="even-rows justify_center align_center">
-          <div class="d-flex space-between">
-            <h3 class="fs-lg fw-bolder white-clr margin-inline-start-600">
-              About Me
-            </h3>
-            <div class="line align_center"></div>
-          </div>
-          <p
-            class="white-clr margin-inline-start-600"
-            style="font-size: 17px; width: min(88%, 500px)"
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum
-            leo tellus, eget blandit urna consequat sit amet. Aenean tincidunt
-            lacus eget purus dictum, congue imperdiet neque eleifend. Duis nulla
-            mauris, volutpat ut placerat in, ornare quis lacus. In suscipit nunc
-            dui, id aliquam turpis pharetra vel.
-          </p>
-
-          <div class="d-flex margin-inline-start-600">
-            <div class="button green-bg">
-              <p class="green-bg fw-bold">Hire Me</p>
-            </div>
-            <div class="button green-bg white-clr">
-              <p class="charcoal-bg fw-bold">Download Cv</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <img
-        src="./assets/dots.png"
-        alt="dots"
-        class="justify_end align_end dots"
-      />
-    </section>
-
-    <!----------------------------------------------end of the II Page ------------------------------------------------->
-    <section class="container">
-      <header class="d-flex space-between margin-bottom-900">
-        <h1 class="fw-bold fs-xs flex-2 primary-header">PORTFOLIO.</h1>
-        <img src="./assets/dots.png" alt="dots" class="dots" />
-      </header>
-
-      <div class="even-rows">
-        <div
-          class="d-flex even-columns align-items-justify-content space-between margin-bottom-900"
-        >
-          <h1 class="fs-lg white-clr fw-bolder justify_center">
-            Recents Project
-          </h1>
-          <div class="line"></div>
-        </div>
-        <div class="d-flex align-items-justify-content">
-          <div class="cards justify_center fw-bold">
-            <div class="card">
-              <img
-                src="./assets/notebooks.png"
-                alt="Picture of open notebooks with a branch of a rose next to it"
-                class="margin-bottom-300"
-              />
-              <div>
-                <p class="white-clr fs-sm text-uppercase">Branding Design</p>
-                <p class="green-clr fs-xxs">Portfolio 2023</p>
-              </div>
-            </div>
-
-            <div class="card">
-              <img
-                src="./assets/Laptop.png"
-                alt="Laptop"
-                class="margin-bottom-300"
-              />
-              <div>
-                <p class="white-clr fs-sm text-uppercase">Website Design</p>
-                <p class="green-clr fs-xxs">Portfolio 2022</p>
-              </div>
-            </div>
-            <div class="card">
-              <img
-                src="./assets/whiteboards.png"
-                alt="Some whiteboards and drawing tools next to it"
-                class="margin-bottom-300"
-              />
-              <div>
-                <p class="white-clr fs-sm text-uppercase">
-                  Illustration Design
-                </p>
-                <p class="green-clr fs-xxs">Portfolio 2021</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!----------------------------------------------end of the III Page ------------------------------------------------->
-
-    <section class="container">
-      <header class="d-flex space-between margin-bottom-900">
-        <h1 class="fw-bold fs-xs flex-2 primary-header">PORTFOLIO.</h1>
-      </header>
-      <div
-        class="green-side green-bg"
-        style="bottom: 0; left: 0; height: 40vh; width: min(50%, 700px)"
-      ></div>
-
-      <div class="even-rows">
-        <div class="even-columns align_center justify_center">
-          <div class="phones">
-            <img src="./assets/phone1.png" alt="smart phone" />
-            <img src="./assets/phone2.png" alt="smart phone" />
-          </div>
-
-          <div class="even-rows align_center margin-inline-start-600">
-            <div class="even-columns align_center">
-              <h1 class="white-clr fw-bold fs-lg">Brand Identity</h1>
-              <div class="line justify_end align_center"></div>
-            </div>
-            <p class="green-clr fw-bold fs-sm">Social Media Design</p>
-            <p class="white-clr fs-xxs" style="width: min(90%, 500px)">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              maiores saepe tempore, doloremque laborum quas deleniti tempora
-              alias, cum iusto fugit natus corrupti sapiente iste quam
-              necessitatibus! Alias, porro est.
-            </p>
-          </div>
-        </div>
-
-        <img
-          src="./assets/dots.png"
-          alt="dots"
-          class="dots justify_end align_end"
-        />
-      </div>
-    </section>
-
-    <!----------------------------------------------end of the IV Page ------------------------------------------------->
-
-    <section class="container">
-      <header class="d-flex space-between margin-bottom-900">
-        <h1 class="fw-bold fs-xs flex-2 primary-header">PORTFOLIO.</h1>
-        <img src="./assets/dots.png" alt="dots" class="dots" />
-      </header>
-
-      <div class="even-rows">
-        <div class="even-columns align-items-justify-content margin-bottom-900">
-          <h1 class="fs-lg white-clr fw-bolder justify_center">
-            Happy Clients Says
-          </h1>
-          <div class="line"></div>
-        </div>
-
-        <div class="even-columns white-clr justify_center">
-          <div
-            class="even-rows Client1"
-            style="
-              border: 3px solid seagreen;
-              padding: 1rem;
-              max-width: min(500px, 90%);
-            "
-          >
-            <div
-              class="circle d-flex align-items-justify-content green-bg white-clr fs-xl"
-            >
-              <i class="bi bi-chat-quote-fill"></i>
-            </div>
-
-            <div class="d-flex">
-              <img src="./assets/Client1.png" alt="picture of a woman" />
-              <div class="justify_center align_center">
-                <p class="fw-bold fs-xs text-uppercase">Juliana Silva</p>
-                <p class="fs-xxs">Our Clients</p>
-              </div>
-            </div>
-            <p class="white-clr fs-xxs" style="width: min(90%, 500px)">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              rutrum leo tellus, eget blandit urna consequat sit amet.
-            </p>
-          </div>
-
-          <div
-            class="even-rows Client2"
-            style="
-              border: 3px solid seagreen;
-              padding: 1rem;
-              max-width: min(500px, 90%);
-            "
-          >
-            <div
-              class="circle d-flex align-items-justify-content green-bg white-clr fs-xl"
-            >
-              <i class="bi bi-chat-quote-fill"></i>
-            </div>
-            <div class="d-flex">
-              <img src="./assets/Client2.png" alt="picture of a man" />
-              <div class="justify_center align_center">
-                <p class="fw-bold fs-xs text-uppercase">Daniel Gallego</p>
-                <p class="fs-xxs">Our Clients</p>
-              </div>
-            </div>
-            <p class="white-clr fs-xxs p-width">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              rutrum leo tellus, eget blandit urna consequat sit amet.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!----------------------------------------------end of the V Page ------------------------------------------------->
-
-    <section class="container margin-bottom-900">
-      <header class="d-flex space-between margin-bottom-900">
-        <h1 class="fw-bold fs-xs flex-2 primary-header">PORTFOLIO.</h1>
-        <img src="./assets/dots.png" alt="dots" class="dots" />
-      </header>
-
-      <div class="justify_center Skills-grid">
-        <div
-          class="line p-width justify_start"
-          style="margin-top: 1.7rem"
-        ></div>
-
-        <div class="PersonalSkills-container">
-          <div class="even-rows justify_center">
-            <div class="justify_start">
-              <div class="d-flex justify_center">
-                <h3 class="fs-lg fw-bolder white-clr">Personal Skills</h3>
-              </div>
-            </div>
-            <p class="white-clr">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              rutrum leo tellus, eget blandit urna consequat sit amet. Aenean
-              tincidunt lacus eget purus dictum, congue imperdiet neque
-              eleifend. Duis nulla mauris, volutpat ut placerat in, ornare quis
-              lacus. In suscipit nunc dui, id aliquam turpis pharetra vel.
-            </p>
-
-            <div class="even-rows fw-bold white-clr">
-              <div>
-                <h3 class="fs-xs margin-bottom-300">Graphic Designer</h3>
-                <div class="d-flex">
-                  <div
-                    class="charcoal-clr align_center"
-                    style="
-                      width: 60%;
-                      height: 1.2rem;
-                      position: relative;
-                      border: 0.1px solid white;
-                    "
-                  >
-                    <div
-                      class="prog green-bg"
-                      style="
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        width: 90%;
-                      "
-                    ></div>
-                  </div>
-                  <div class="fs-md">90%</div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello Everyone</p>
+                    <h1 class="hero-title">
+                        <span class="title-line">I'M MORGAN</span>
+                        <span class="title-line">MAXWELL</span>
+                    </h1>
+                    <p class="hero-subtitle">Graphic Designer</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
                 </div>
-              </div>
-              <div>
-                <h3 class="fs-xs margin-bottom-300">Video Editing</h3>
-                <div class="d-flex">
-                  <div
-                    class="charcoal-clr align_center"
-                    style="
-                      width: 60%;
-                      height: 1.2rem;
-                      position: relative;
-                      border: 0.1px solid white;
-                    "
-                  >
-                    <div
-                      class="prog green-bg"
-                      style="
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        width: 95%;
-                      "
-                    ></div>
-                  </div>
-                  <div class="fs-md">95%</div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="./assets/maxwell.png" alt="Morgan Maxwell" loading="lazy">
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
 
-        <img
-          src="./assets/maxwell.png"
-          alt="image of Person"
-          style="width: min(70%, 500px)"
-        />
-      </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
     </section>
-    <!----------------------------------------------end of the VI Page ------------------------------------------------->
 
-    <section class="container even-rows">
-      <header class="d-flex space-between">
-        <h1 class="fw-bold fs-xs flex-2 primary-header">PORTFOLIO.</h1>
-      </header>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="./assets/maxwellFriend.png" alt="Morgan with friend" loading="lazy">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2>About Me</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <p class="about-description">
+                        Professional graphic designer with over 5 years of experience in brand identity and web design. 
+                        I strive to transform ideas into innovative and attractive designs that leave a positive impact on the target audience.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="bi bi-palette"></i>
+                            </div>
+                            <h4>Brand Identity</h4>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h4>Web Design</h4>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="bi bi-brush"></i>
+                            </div>
+                            <h4>Illustration</h4>
+                        </div>
+                    </div>
 
-      <div class="Achievement_grid white-clr align_center padding-block-900">
-        <div class="even-rows">
-          <div class="box">
-            <h3
-              class="green-clr fs-sm margin-bottom-700 text-align-center text-uppercase"
-            >
-              Winning Competition
-            </h3>
-            <div class="even-rows">
-              <div class="d-flex align-items-justify-content">
-                <i class="bi bi-check2 fs-xs"></i>
-                <p>1st 2022 National Design Competition</p>
-              </div>
-
-              <div class="d-flex align-items-justify-content">
-                <i class="bi bi-check2 fs-xs"></i>
-                <p>1st 2022 National Design Competition</p>
-              </div>
-
-              <div class="d-flex align-items-justify-content">
-                <i class="bi bi-check2 fs-xs"></i>
-                <p>1st 2022 National Design Competition</p>
-              </div>
+                </div>
             </div>
-          </div>
         </div>
-
-        <div class="even-rows">
-          <h1 class="fs-lg fw-bold text-align-center">Achievement</h1>
-          <div class="box align_end">
-            <h3
-              class="green-clr fs-sm margin-bottom-700 text-align-center text-uppercase"
-            >
-              Best Social Media Design
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adi piscing elit. Duis
-              rutrum leo tellus, eget blandit
-            </p>
-          </div>
-        </div>
-
-        <div class="even-rows">
-          <div class="line justify_end"></div>
-          <div class="box justify_center align_end charcoal-clr green-bg">
-            <h3
-              class="fs-sm margin-bottom-700 text-align-center text-uppercase"
-            >
-              2022 Best Design Worldwide
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adi piscing elit. Duis
-              rutrum leo tellus, eget blandit
-            </p>
-          </div>
-        </div>
-      </div>
-      <img src="./assets/dots.png" alt="dots" class="dots justify_end" />
     </section>
-    <!----------------------------------------------end of the VII Page ------------------------------------------------->
-    <section class="container">
-      <header class="d-flex space-between margin-bottom-900">
-        <h1 class="fw-bold fs-xs flex-2 primary-header">PORTFOLIO.</h1>
-        <img src="./assets/dots.png" alt="dots" class="dots" />
-      </header>
 
-      <div class="ContactDetails-grid">
-        <img src="./assets/ContactDetails.png" alt="" />
-
-        <div class="ContactDetails white-clr align_center">
-          <h3 class="fs-lg fw-bolder white-clr margin-bottom-700">
-            Contact Details
-          </h3>
-          <div class="ContactDetails align_center justify_center">
-            <div class="d-flex fs-sm margin-bottom-300">
-              <p class="green-clr fw-bold">
-                Phone : <span class="white-clr fw-regular"> +123 456 7890</span>
-              </p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recent Projects</h2>
+                <div class="section-line"></div>
             </div>
-
-            <div class="d-flex fs-sm">
-              <p class="green-clr fw-bold margin-bottom-300">
-                Address :
-                <span class="white-clr fw-regular">
-                  123 Anywhere St., Any City, ST 12345</span
-                >
-              </p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="./assets/notebooks.png" alt="Brand Identity Design" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Branding Design</h4>
+                                <p>Portfolio 2023</p>
+                                <a href="#" class="portfolio-link">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="./assets/Laptop.png" alt="Website Design" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Website Design</h4>
+                                <p>Portfolio 2022</p>
+                                <a href="#" class="portfolio-link">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="illustration">
+                    <div class="portfolio-image">
+                        <img src="./assets/whiteboards.png" alt="Illustration Design" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Illustration Design</h4>
+                                <p>Portfolio 2021</p>
+                                <a href="#" class="portfolio-link">
+                                    <i class="bi bi-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="d-flex fs-sm">
-              <p class="green-clr fw-bold">
-                Email :
-                <span class="white-clr fw-regular">
-                  www.reallygreatsite.com</span
-                >
-              </p>
-            </div>
-          </div>
         </div>
-        <div class="line" style="margin-top: 7rem"></div>
-      </div>
     </section>
-    <!----------------------------------------------end of the VIII Page ------------------------------------------------->
 
-    <section class="container even-rows">
-      <div
-        class="green-side green-bg"
-        style="left: 0; top: 0; height: 100%; width: min(33%, 500px)"
-      ></div>
-      <header class="primary-header">
-        <h1 class="fw-bold fs-xs flex-2">PORTFOLIO.</h1>
-      </header>
-
-      <div class="even-columns">
-        <img
-          src="./assets/thank.png"
-          alt="maxwell's Friend image"
-          class="justify_end align_center maxwellImg"
-          style="width: min(70%, 500px)"
-        />
-
-        <div class="even-rows justify_center align_center">
-          <div class="d-flex space-between">
-            <h3 class="fs-xl fw-bolder white-clr margin-inline-start-600">
-              Thank You
-            </h3>
-            <div class="line align_center"></div>
-          </div>
-          <p class="white-clr margin-inline-start-600 p-width">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum
-            leo tellus, eget blandit urna consequat sit amet. Aenean tincidunt
-            lacus eget purus dictum, congue imperdiet neque eleifend. Duis nulla
-            mauris, volutpat ut placerat in, ornare quis lacus. In suscipit nunc
-            dui, id aliquam turpis pharetra vel.
-          </p>
-
-          <div class="d-flex margin-inline-start-600 thanksBtn">
-            <div class="button green-bg white-clr">
-              <p class="charcoal-bg fw-bold">See More My Portfolio</p>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="services-bg"></div>
+        <div class="container">
+            <div class="services-content">
+                <div class="services-images">
+                    <div class="phone-mockup">
+                        <img src="./assets/phone1.png" alt="Mobile App Design" loading="lazy">
+                    </div>
+                    <div class="phone-mockup">
+                        <img src="./assets/phone2.png" alt="Mobile App Design" loading="lazy">
+                    </div>
+                </div>
+                <div class="services-text">
+                    <div class="section-header">
+                        <h2>Brand Identity</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <h3 class="service-subtitle">Social Media Design</h3>
+                    <p class="service-description">
+                        I provide comprehensive design services for brand identity including logo design, marketing materials, 
+                        and social media post design with a modern and attractive style.
+                    </p>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Professional Logo Design</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Complete Brand Identity</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <span>Social Media Posts</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="button green-bg">
-              <p class="green-bg fw-bold">Contact Me!</p>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <img
-        src="./assets/dots.png"
-        alt="dots"
-        class="justify_end align_end dots"
-      />
     </section>
-    <!----------------------------------------------end of the IX Page ------------------------------------------------->
-  </body>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Happy Clients Says</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>"Excellent and outstanding work! Morgan is a very professional designer and committed to deadlines. I highly recommend working with him."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="./assets/Client1.png" alt="Client 1" loading="lazy">
+                        </div>
+                        <div class="author-info">
+                            <h4>John Smith</h4>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p>"Creative designs and excellent customer service. Morgan exceeded my expectations and more in the brand identity project."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="./assets/Client2.png" alt="Client 2" loading="lazy">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <div class="section-line"></div>
+                </div>
+                <p class="contact-subtitle">Ready to start your next project? Let's discuss how we can work together.</p>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:hello@reallygreatsite.com">hello@reallygreatsite.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <span>New York, United States</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2022 Morgan Maxwell. All rights reserved.</p>
+                    <p class="demo-notice">This is a demo portfolio created for learning purposes</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="bi bi-behance"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
